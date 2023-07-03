@@ -115,8 +115,8 @@ contract XERC721 is ERC721, ERC721URIStorage, ERC721Enumerable, IDapp {
     );
 
     require(
-      _ownerOf(tokenId) == msg.sender,
-      "caller is not the owner"
+      _ownerOf(tokenId) == _msgSender() || super._isApprovedOrOwner(_msgSender(), tokenId),
+      "caller is not the owner and not approved"
     );
 
     TransferParams memory transferParams;
