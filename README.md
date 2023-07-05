@@ -1,8 +1,8 @@
 # Crosstalk Samples
 
-## PING-PONG
+## XERC721
 
-Here, we will deploy a cross-chain ping pong smart contract built using the Router CrossTalk. It is a system where we can send a message from the source chain(EVM) to a destination chain(EVM) and receive back the acknowledgement from the destination chain on the source chain. So basically, we will send a ping to the destination chain and receive a pong back to the source chain. For that to work, kindly follow the below mentioned steps for deployment:
+Here, we will deploy a cross-chain xerc721 smart contract built using the Router CrossTalk. It is a system where we can send a message from the source chain(EVM) to a destination chain(EVM) and receive back the acknowledgement from the destination chain on the source chain. So basically, we will send a ping to the destination chain and receive a pong back to the source chain. For that to work, kindly follow the below mentioned steps for deployment:
 
 1. Compile your contracts by first adding `.env` file and run
    ```shell
@@ -16,15 +16,15 @@ Here, we will deploy a cross-chain ping pong smart contract built using the Rout
    and check if `TASK_DEPLOY_PINGPONG` is listed in the tasks list.
 4. You just need to run the following command for respective chain to get your contracts deployed on that chain.
    ```shell
-   npx hardhat TASK_DEPLOY_PINGPONG --network <network_name>
+   npx hardhat TASK_DEPLOY_XERC721 --network <network_name>
    ```
    For example:
    1. If you want to deploy your contract on Polygon mumbai, you just have to run:
    ```shell
-   npx hardhat TASK_DEPLOY_PINGPONG --network mumbai
+   npx hardhat TASK_DEPLOY_XERC721 --network mumbai
    ```
    2. If you want to deploy your contract on Avalanche Fuji, you just have to run:
    ```shell
-   npx hardhat TASK_DEPLOY_PINGPONG --network fuji
+   npx hardhat TASK_DEPLOY_XERC721 --network fuji
    ```
    and likewise.
